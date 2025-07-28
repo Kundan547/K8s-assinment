@@ -5,39 +5,6 @@ This repository contains a complete Kubernetes setup for a **frontend**, **backe
 
 ---
 
-## 📂 Project Structure
-
-.
-├── backend # Backend microservice
-│ ├── backend-configmap.yaml
-│ ├── backend-deployment.yaml
-│ ├── backend-secret.yaml
-│ └── backend-service.yaml
-├── database # PostgreSQL database
-│ ├── database-pvc.yaml
-│ ├── database-service.yaml
-│ └── database-statefulset.yaml
-├── frontend # Frontend microservice
-│ ├── frontend-deployment.yaml
-│ └── frontend-service.yaml
-├── hpa # Horizontal Pod Autoscalers
-│ ├── backend-hpa.yaml
-│ └── frontend-hpa.yaml
-├── namespace # Namespace definitions
-│ ├── backend-namespace.yaml
-│ ├── database-namespace.yaml
-│ └── frontend-namespace.yaml
-├── scripts # Helper scripts for cluster management
-│ ├── cleanup.sh
-│ ├── deploy.sh
-│ ├── rollback.sh
-│ ├── scale.sh
-│ └── test-hpa.sh
-└── README.md
-
-
----
-
 ## 🏗 Architecture
 
 ```text
